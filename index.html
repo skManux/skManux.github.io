@@ -20,13 +20,13 @@
     <meta name="description" content="Hey! I'm sk_Manux and I am a Java/C# Developer. I'm studying CyberSecurity and Graphics.">
     <meta name="keywords" content="skmanux, sk manux, sk_manux, sk_m4nux, skm4nux, skmanux developer, skm4nux developer, sk_manux developer, sk_m4nux developer, skmanux portfolio, skm4nux portfolio, sk_manux portfolio, sk_m4nux portfolio">
     <meta name="author" content="sk_M4nux">
-    <meta property="og:image" content="https://www.vinodjangid.me/src/webp/vinod%20(2).webp">
+    <meta property="og:image" content="./src/png/logo.png">
 
     <!-- Title -->
     <title>sk_Manux Portfolio</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="src/jpg/profile-pic (3).png">
+    <link rel="icon" type="image/x-icon" href="./src/png/logo.png">
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -42,7 +42,7 @@
 <body class="body">
     <!-- Audio -->
     <audio loop="" id="audioPlayer" autoplay="" style="display:none">
-        <source src="src/mp3/audio.mp3" type="audio/mp3">
+        <source src="./src/mp3/sound.mp3" type="audio/mp3">
     </audio>
 
     <!-- Loader -->
@@ -56,26 +56,30 @@
             <div class="hey">Hey!</div>
             <div class="logo" tabindex="0" aria-label="Logo">
                 <div class="logo-top">
-                    <img src="src/png/logo.png" alt="Logo">
+                    <img src="./src/png/logo.png" alt="Logo">
                 </div>
             </div>
             <div class="navbar-tabs" id="navbar-tabs">
                 <ul class="navbar-tabs-ul">
                     <a href="#home" tabindex="0" aria-label="Home">
-                        <li class="home activeThistab" class="navbar-tabs-li " data-aos="fade-down"
-                            data-aos-delay="100">&#60;/Home&#62;</li>
+                        <li class="home activeThistab" class="navbar-tabs-li " data-aos="fade-down" data-aos-delay="100">
+                            &#60;/Home&#62;
+                        </li>
                     </a>
                     <a href="#about" aria-label="About Me">
                         <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
-                            &#60;/About Me&#62;</li>
-                    </a>
-                    <a href="#skills" aria-label="Skills">
-                        <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
-                            &#60;/Skills&#62;</li>
+                            &#60;/About Me&#62;
+                        </li>
                     </a>
                     <a href="#projects" aria-label="Projects">
                         <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
-                            &#60;/Projects&#62;</li>
+                            &#60;/Projects&#62;
+                        </li>
+                    </a>
+                    <a href="#experiences" aria-label="Experiences">
+                        <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="1100">
+                            &#60;/Experiences&#62;
+                        </li>
                     </a>
                 </ul>
             </div>
@@ -95,20 +99,24 @@
         <div class="mobiletogglemenu" id="mobiletogglemenu">
             <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
                 <a href="#home" tabindex="0" aria-label="Home">
-                    <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab"
-                        onclick="hidemenubyli()">&#60;/Home&#62;</li>
+                    <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
+                        &#60;/Home&#62;
+                    </li>
                 </a>
                 <a href="#about" tabindex="0" aria-label="About Me">
                     <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
-                        &#60;/About Me&#62;</li>
-                </a>
-                <a href="#skills" tabindex="0" aria-label="Skills">
-                    <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
-                        &#60;/Skills&#62;</li>
+                        &#60;/About Me&#62;
+                    </li>
                 </a>
                 <a href="#projects" tabindex="0" aria-label="Projects">
                     <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
-                        &#60;/Projects&#62;</li>
+                        &#60;/Projects&#62;
+                    </li>
+                </a>
+                <a href="#experiences" tabindex="0" aria-label="Experiences">
+                    <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+                        &#60;/Experiences&#62;
+                    </li>
                 </a>
             </ul>
         </div>
@@ -329,7 +337,7 @@
             <div class="projects-section-div">
                 <div class="section-heading">
                     <article class="section-heading-article" tabindex="0" aria-label="Projects">
-                        &#60;/Projects&#62;
+                        &#60;/Public Projects&#62;
                     </article>
                     <p class="sectionHeadingP"></p>
                 </div>
@@ -338,7 +346,7 @@
                     <a href="https://atlas.skmanux.dev/" target="_blank">
                         <div class="project-box project-box1" id="project-box1">
                             <div class="info-div">
-                                <img src="src/png/atlas-logo.png" alt="" class="faviconforProject">
+                                <img src="./src/png/projects/atlas/logo.png" alt="" class="faviconforProject">
                                 <article class="ProjectHeading">
                                     Atlas
                                 </article>
@@ -353,34 +361,45 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="image-div"><img src="src/png/atlas-logo-wide.png" alt="" width="100%"></div>
-                        </div>
-                    </a>
-                    <a href="https://spookyrealms.it/" target="_blank">
-                        <div class="project-box project-box2" id="project-box2">
-                            <div class="info-div">
-                                <img src="src/png/sr-logo.png" alt="" class="faviconforProject">
-                                <article class="ProjectHeading">
-                                    SpookyRealms
-                                </article>
-                                <p class="ProjectDescription">
-                                    I'm currently working on SpookyRealms as Head-Developer and Owner. This project is a minecraft server based on the KitPvP 1.8 game.
-                                </p>
-                                <button class="cta">
-                                    <span>Open the Website</span>
-                                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                                        <path d="M1,5 L11,5"></path>
-                                        <polyline points="8 1 12 5 8 9"></polyline>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="image-div"><img src="src/png/sr-logo-glow.png" alt="" width="80%"></div>
+                            <div class="image-div"><img src="./src/png/projects/atlas/logo-wide.png" alt=""></div>
                         </div>
                     </a>
                 </div>
             </div>
         </section>
+
+        <section class="skills-section-container" id="experiences">
+            <div class="skills-section">
+                <div class="section-heading" data-aos="fade-up">
+                    <article class="section-heading-article" tabindex="0" aria-label="Skills">
+                        &#60;/Staff Experiences&#62;
+                    </article>
+                    <p class="sectionHeadingP"></p>
+                </div>
+
+                <div class="frontend-dev-section">
+                    <div class="frontend-dev-heading" data-aos="fade-up" tabindex="0"
+                        aria-label="My Skills">My Staff Experiences</div>
+                    <div class="languages-section">
+                        <div class="language-name" data-aos="fade-up" id="java">
+                            <article tabindex="0" aria-label="Java">Lyzard</article>
+                            <p tabindex="0" aria-label="Java">Jr.Dev</p>
+                        </div>
+                        <div class="language-name" data-aos="fade-up" id="java">
+                            <article tabindex="0" aria-label="Java">Nupped</article>
+                            <p tabindex="0" aria-label="Java">Owner & Head Dev</p>
+                        </div>
+                        <div class="language-name" data-aos="fade-up" id="java">
+                            <article tabindex="0" aria-label="Java">SaturnSCP</article>
+                            <p tabindex="0" aria-label="Java">Owner & Head Dev</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <br><br><br><br>
 
     <!-- Footer -->
     <footer>
