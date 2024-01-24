@@ -183,18 +183,17 @@ document.addEventListener(
 
 let pupils = document.getElementsByClassName("pupil");
 let pupilsArr = Array.from(pupils);
-// console.log(pupils);
 
 let pupilStartPoint = -1;
 let pupilRange = 3;
 
-// mouse X
+// Mouse X
 let mouseXStartPoint = 0;
 let mouseXEndPoint = window.innerWidth;
 let currentXPosition = 0;
 let fracXValue = 0;
 
-// mouse Y position
+// Mouse Y
 let mouseYEndPoint = window.innerHeight;
 let currentYPosition = 0;
 let fracYValue = 0;
